@@ -9,6 +9,7 @@
 
     <!-- jQuery Plugins -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet" />
@@ -16,7 +17,13 @@
   </head>
 	
   <body>
-		
+  
+    <div ng-app="">
+    <p>Type something and let Angular repeat it!</p>
+    <p>What ever comes to mind: <input type="text" ng-model="thoughts"></p>
+    <p>{{thoughts}}</p>
+    </div>
+    
   <footer>
   </footer>
       <!--Scripts-->
